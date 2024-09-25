@@ -12,7 +12,7 @@
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.7",
     "lucide-react": "^0.446.0",
-    "primereact": "^10.8.3",
+    "primereact": "^6.6.0",
     "react": "^16.14.0",
     "react-desktop": "^0.3.9",
     "react-dom": "^16.14.0",
