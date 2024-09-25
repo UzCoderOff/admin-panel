@@ -10,13 +10,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@reduxjs/toolkit": "^2.2.7",
     "lucide-react": "^0.446.0",
     "primereact": "^6.6.0",
     "react": "^16.14.0",
     "react-desktop": "^0.3.9",
-    "react-dom": "^16.14.0",
-    "react-redux": "^9.1.2"
+    "react-dom": "^16.14.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.9.0",
