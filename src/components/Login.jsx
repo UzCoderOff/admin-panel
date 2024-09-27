@@ -128,7 +128,7 @@ const Login = () => {
             { "p-button-loading": loading }
           )}
         >
-          {loading ? <ProgressSpinner/> : "Login"}
+          {loading ? <ProgressSpinner className="w-6 h-6" strokeWidth="8"/> : "Login"}
         </Button>
       </form>
     </div>
