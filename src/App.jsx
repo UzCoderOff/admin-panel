@@ -5,6 +5,7 @@ if (typeof global === "undefined") {
 import React, { useEffect, useState } from "react";
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import { Home, Login } from "./components";
+import { ProgressBar } from "primereact/progressbar";
 
 const App = () => {
   const [isAuth, setIsAuth] = useState(false);
@@ -36,13 +37,16 @@ const App = () => {
   }, []);
 
   if (loading) {
-    document.title = "Loading..."
+    document.title = "Loading...";
   }
 
   if (loading) {
     return (
-      <div className="bg-[#546dc0] w-full h-[100vh] flex items-center align-middle justify-center">
-        Loading
+      <div className="bg-[white] w-full h-[100vh] flex items-center align-middle justify-center">
+        <ProgressBar
+          mode="indeterminate"
+          className={"fixed top-0 left-0 w-full h-auto"}
+        />
       </div>
     );
   }
