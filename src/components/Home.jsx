@@ -20,7 +20,7 @@ const Home = () => {
   const [editId, setedItId] = useState(null);
 
   useEffect(() => {
-    document.title = "Home • Admin Panel";
+    document.title = "Dashboard • Admin Panel";
   }, []);
 
   const fetchCateg = () => {

@@ -45,7 +45,7 @@ const App = () => {
       <div className="bg-[white] w-full h-[100vh] flex items-center align-middle justify-center">
         <ProgressBar
           mode="indeterminate"
-          className={"fixed top-0 left-0 w-full h-20"}
+          className={"fixed top-0 left-0 w-full h-3"}
         />
       </div>
     );
