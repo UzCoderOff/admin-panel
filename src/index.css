@@ -14,15 +14,12 @@ input[type="number"] {
   -moz-appearance: textfield;
 }
 
-body {
+/* body {
   -webkit-user-select: none;
   -moz-user-select: none;   
   -ms-user-select: none;     
   user-select: none;         
-}
+} */
 
 
-.costum {
-  box-shadow: 10px 0px 0px;
-}
 

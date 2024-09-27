@@ -1,16 +1,17 @@
 import React, { useEffect, useRef, useState } from "react";
-import { Button, ProgressCircle, TextInput } from "react-desktop/macOs";
 import { Toast } from "primereact/toast";
 import { InputText } from "primereact/inputtext";
 import { classNames } from "primereact/utils";
 import "primereact/resources/primereact.min.css";
 import "primereact/resources/themes/saga-blue/theme.css";
 import "tailwindcss/tailwind.css";
+import { Button } from "primereact/button";
+import {ProgressSpinner} from 'primereact/progressspinner'
 
 // Num:  900474227
 
 const Login = () => {
-  const [form, setForm] = useState({
+  const [form, setForm] = useState({  
     phone_number: "",
     password: "",
   });
@@ -118,15 +119,16 @@ const Login = () => {
           />
         </div>
         <Button
-          color="blue"
+         severity="success"
           type="submit"
+          text={false}
           disabled={loading}
           className={classNames(
             "w-full flex align-middle justify-center items-center",
             { "p-button-loading": loading }
           )}
         >
-          {loading ? <ProgressCircle /> : "Login"}
+          {loading ? <ProgressSpinner/> : "Login"}
         </Button>
       </form>
     </div>

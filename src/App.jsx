@@ -5,7 +5,6 @@ if (typeof global === "undefined") {
 import React, { useEffect, useState } from "react";
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import { Home, Login } from "./components";
-import { ProgressCircle } from "react-desktop/macOs";
 
 const App = () => {
   const [isAuth, setIsAuth] = useState(false);
@@ -43,7 +42,7 @@ const App = () => {
   if (loading) {
     return (
       <div className="bg-[#546dc0] w-full h-[100vh] flex items-center align-middle justify-center">
-        <ProgressCircle size={50} color={'white'} />
+        Loading
       </div>
     );
   }
